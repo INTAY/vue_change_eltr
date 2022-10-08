@@ -1,0 +1,49 @@
+/* 主题色 */
+$--color-primary: #1396c2;
+$--color-success: #13ce66;
+$--color-warning: #ffba00;
+$--color-danger: #ff4949;
+$--color-info: #0c9ab1;
+$--color-danger1: #f15e5e;
+
+/* 圆角 */
+$--border-radius-base: 2px;
+
+/* 按钮
+-------------------------- */
+$--button-font-weight: 400;
+$--button-border-radius: $--border-radius-base;
+$--button-border-color: $--color-primary;
+
+/* 边框
+-------------------------- */
+$--border-color-light: #dfe4ed;
+$--border-color-lighter: #e6ebf5;
+$--border-color-grey: #a3a3a3;
+$--border-color-grey1: #cbcbcb;
+$--border-color-grey2: #E8E8E8;
+
+/* 表格
+-------------------------- */
+$--table-border: 1px solid #dfe6ec;
+$--table-link-color: #23a4a4;
+$--table-link-disabled-color: #d2d2d2;
+$--table-th-bg-color: #f1f1f1;
+$--table-stripe-bg-color: #f7f7f7;
+$--table-tr-hover-bg-color: #f0f0f0;
+
+/* icon 字体路径变量，必需 */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+$--font-size-base: 14px;
+$--font-size-small: 13px;
+$--font-size-large: 18px;
+$--font-color-base: #232323;
+$--font-color-disabled-base: #bbb;
+$--font-weight-primary: 400;
+$--font-line-height-primary: 24px;
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+:export {
+  theme: $--color-primary;
+}

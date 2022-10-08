@@ -1,0 +1,241 @@
+.header {
+    background-color: #242f42;
+}
+
+.login-wrap {
+    background: #324157;
+}
+
+.plugins-tips {
+    background: #eef1f6;
+}
+
+.plugins-tips a {
+    color: #20a0ff;
+}
+
+.el-upload--text em {
+    color: #20a0ff;
+}
+
+.pure-button {
+    background: #20a0ff;
+}
+
+.tags-li.active {
+    border: 1px solid #409EFF;
+    background-color: #409EFF;
+}
+
+.message-title {
+    color: #20a0ff;
+}
+
+.collapse-btn:hover {
+    background: rgb(40, 52, 70);
+}
+
+/* ····················页面上的样式（一级样式）························ */
+
+/* 新增按钮颜色 */
+.newButtonColor {
+    color: #fff !important;
+    background-color: #1396c2 !important;   
+}
+
+.newButtonColor:focus,
+.newButtonColor:hover {
+    background-color: #30a8d1 !important;
+}
+
+/* 批量删除颜色 */
+.BatchDeleteColor {
+    color: #d42f2f !important;
+    border-color: #d42f2f !important;
+}
+
+.BatchDeleteColor:focus,
+.BatchDeleteColor:hover {
+    background-color: #fef3f3 !important;
+}
+
+/* 新增机构颜色 */
+.newColor {
+    color: #1396C2 !important;
+    background-color: #E5F8FF !important;
+    border-color: #B5D5E1 !important;
+}
+
+.newColor:focus,
+.newColor:hover {
+    background-color: #cde9f3 !important;
+}
+
+/* 按钮之间的间距 */
+.btnSpace {
+    margin-right: 14px !important;
+}
+
+/* ···························页面下弹框的样式（二级样式） */
+/* 按钮之间的颜色 */
+.bouncedRightBTNSpace {
+    margin-right: 10px !important;
+}
+
+.bouncedLeftBTNSpace {
+    margin-left: 10px !important;
+}
+
+.bouncedBottomBTNSpace {
+    margin-bottom: 10px !important;
+}
+
+/* 删除按钮的颜色 */
+.bouncedDelColor {
+    color: #fff !important;
+    background-color: #f06363 !important;
+    border-color: #f06363 !important;
+}
+
+/* 保存、查询等按钮颜色 */
+.bouncedHold {
+    color: #fff !important;
+    background-color: #1396c2 !important;
+    border-color: #1396c2 !important;
+}
+
+.bouncedHold:focus,
+.bouncedHold:hover {
+    background-color: #30a8d1 !important;
+}
+
+/* 取消等按钮颜色 */
+.cancelBTN {
+    color: #00607f !important;
+    border: 1px solid #8facb5 !important;
+}
+
+.cancelBTN:focus,
+.cancelBTN:hover {
+    background-color: #e7f5f9 !important;
+}
+
+/* ····················表格统一样式 */
+/* 表格内字体大小 */
+.tableInFonts {
+    font-size: 14px !important;
+}
+
+/* 表头高度 */
+.el-table__header th {
+    padding: 7px 0 4.5px !important;
+    font-size: 13px !important;
+}
+
+.el-table td {
+    padding: 0 !important;
+}
+
+/* 表格行高 */
+.el-table__body .cell {
+    height: 35px !important;
+    line-height: 35px !important;
+}
+
+.el-table--small {
+    font-size: 14px !important;
+}
+
+/* 表格内操作栏按钮 */
+/* 蓝色按钮 */
+.buleBTN {
+    color: #1396C2 !important;
+    background-color: #EDF7FB !important;
+    border-color: #CBDEE7 !important;
+}
+
+.buleBTN:focus,
+.buleBTN:hover {
+    border-color: #1396c2 !important;
+}
+
+/* 红色按钮 */
+.redBTN {
+    color: #d42f2f !important;
+
+    border-color: #efc3c3 !important;
+
+}
+
+.redBTN:focus,
+.redBTN:hover {
+    border-color: #d42f2f !important;
+    background-color: #e9bdbd !important;
+}
+
+/* 操作栏按钮间距 */
+.tableSpaceBTN {
+    margin-right: 5px !important;
+}
+
+
+/* 列表页 编辑页 搜索区域 按钮尺寸 */
+/* 列表页 */
+.listBTN {
+    width: 120px !important;
+    height: 32px !important;
+}
+
+/* 编辑页面 */
+.editorBTN {
+    width: 200px !important;
+    height: 35px !important;
+}
+
+/* 搜索区域 */
+.SearchBTN {
+    width: 60px !important;
+    height: 30px !important;
+}
+
+/* 弹框header */
+.el-dialog__header {
+    padding: 40px 0 10px 50px !important;
+}
+
+
+
+/*删除弹框换位*/
+.messagebox-button {
+    margin-bottom: 20px !important;
+}
+
+.messagebox-button:nth-child(even) {
+    float: left;
+    margin-left: 30px !important;
+}
+
+.messagebox-button:nth-child(odd) {
+    float: right;
+    margin-right: 30px !important;
+}
+
+/* 搜索区域input框宽度 */
+.inputWidth {
+    width: 180px !important;
+}
+
+/* 查询条件字体大小 */
+.el-form-item__label {
+    font-size: 13px !important;
+}
+
+/* 字体颜色为灰色 */
+.grayBTN {
+    color: #ccc !important;
+}
+
+/* elementUI时间 */
+.el-date-editor.el-input__inner {
+  width: 180px !important;
+}

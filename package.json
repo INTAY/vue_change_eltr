@@ -1,0 +1,45 @@
+{
+  "name": "vue-manage-system",
+  "version": "4.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --report"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "echarts": "^4.8.0",
+    "echarts-gl": "^1.1.1",
+    "el-select-tree": "^1.0.22",
+    "element-ui": "^2.11.0",
+    "file-saver": "^2.0.5",
+    "jquery": "^3.5.1",
+    "jsencrypt": "^3.0.0-rc.1",
+    "jszip": "^3.5.0",
+    "mavon-editor": "^2.6.17",
+    "moment": "^2.27.0",
+    "node-sass": "^4.14.1",
+    "vue": "^2.6.10",
+    "vue-baidu-map": "^0.21.22",
+    "vue-cookie": "^1.1.4",
+    "vue-cropperjs": "^3.0.0",
+    "vue-happy-scroll": "^2.1.1",
+    "vue-i18n": "^8.10.0",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.0.3",
+    "vue-schart": "^2.0.0",
+    "vuedraggable": "^2.17.0",
+    "vuex": "^3.5.1",
+    "vuex-persistedstate": "^3.0.1",
+    "xlsx": "^0.15.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "less-loader": "^6.2.0",
+    "sass-loader": "^9.0.2",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

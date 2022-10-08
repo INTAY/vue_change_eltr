@@ -1,0 +1,30 @@
+{
+  "id": "2031719",
+  "name": "新建项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5269215",
+      "name": "导入",
+      "font_class": "daoru1",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "5269216",
+      "name": "导出",
+      "font_class": "daochu",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "8319350",
+      "name": "新增",
+      "font_class": "xinzeng1",
+      "unicode": "e6d0",
+      "unicode_decimal": 59088
+    }
+  ]
+}

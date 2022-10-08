@@ -1,0 +1,359 @@
+/*
+* @name : 一些自定义样式
+*/
+
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Helvetica Neue 新西文字体 */
+  /* Helvetica 西文字体 */
+  /* PingFang SC 苹果苹方字体 */
+  /* Hiragino Sans GB 冬青黑体 */
+  /* Microsoft YaHei 微软雅黑 */
+  /* Arial 无衬线 */
+  /* sans-serif 无衬线 */
+  font-family: Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+// /*全局修改滚动条样式*/
+// ::-webkit-scrollbar {
+//   width: 6px;       /*滚动条宽度*/
+//   height: 10px;     /*滚动条高度*/
+// }
+// /*定义滚动条轨道*/
+// ::-webkit-scrollbar-track {
+//   background: rgb(239, 239, 239);  /*滚动条的背景颜色*/
+//   border-radius: 2px;             /*滚动条的背景区域的圆角*/
+// }
+// /*定义滑块*/
+// ::-webkit-scrollbar-thumb {
+//   background: #bfbfbf;
+//   border-radius: 10px;
+// }
+// /*滚动条鼠标移上去*/
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #333;
+// }
+// /*边角，即两个滚动条的交汇处*/
+// ::-webkit-scrollbar-corner {
+//   background: #179a16;
+// }
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+// 表格上方搜索框
+.search-form{
+  background: #fcfcfc;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px;
+  .el-input__inner {
+    width: 180px;
+    height: 30px;
+  }
+  .el-button{
+    width: 60px;
+    height: 30px;
+    padding: 5px 10px;
+    // border-radius: 3px;
+  }
+}
+.el-button{
+  border-radius: 2px !important;
+}
+// 表格上方按钮
+.table-top-button{
+  padding: 10px 10px 0 10px;
+  .el-button{
+    width: 120px;
+    height: 32px;
+    padding: 5px 10px;
+    border-radius: 2px;
+  }
+}
+
+// 表格“操作”列中的链接
+.el-table__body .el-button--text {
+  color: $--table-link-color !important;
+  border: 0 !important;
+}
+
+// 按钮
+.btn-opt {
+  width: 120px;
+  padding: 8px 20px;
+}
+
+.btn-small {
+  width: 60px;
+  padding: 7px 0;
+  border-radius: 3px;
+}
+
+.btn-confirm {
+  width: 160px;
+}
+.btn-w-auto {
+  padding: 8px 30px;
+}
+
+// 文本框
+.txtbox-default {
+  width: 180px;
+
+  .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+.txtbox-long {
+  width: 300px;
+
+  .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+// 下拉框
+.select-default {
+  width: 220px;
+}
+
+// 表单
+.el-form-item__label {
+  color: $--font-color-base;
+  line-height: 30px;
+}
+
+// 分页-固定定位
+.page-wrap-fixed {
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 40px;
+  line-height: 25px;
+  border-top: 1px solid #bcbcbc;
+  border-bottom: 1px solid #bcbcbc;
+
+  .page-option-wrap {
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    background-color: #fff;
+
+    .split-line {
+      display: inline-block;
+      width: 1px;
+      background-color: #e8e8e8;
+      height: 16px;
+      vertical-align: middle;
+    }
+
+    .page-option-icon {
+      display: inline-block;
+      padding: 0 10px;
+      color: #1396c2;
+      font-weight: 700;
+      font-size: 15px;
+
+    }
+  }
+}
+// 嵌套表格样式
+.nestedTable {
+   .page-wrap-fixed {
+      position: static;
+      border-top: none;
+  }
+  .search-wrap {
+      border: none !important;
+      padding-top: 0 !important;
+  }
+}
+// 展示列
+.col-setting-popover {
+  min-width: 100px;
+  padding: 9px 16px;
+  .col-setting-title {
+    color: #232323;
+    font-size: 13px;
+  }
+  .col-setting-group {
+    .el-checkbox {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}
+// 批量删除按钮
+.batchDelete-btn{
+  width: 120px;
+  color: #d42f2f !important;
+  border: 1px solid #d42f2f;
+}
+.batchDelete-btn:focus,.batchDelete-btn:hover {
+    background-color: #fef3f3;
+    border-color: #d42f2f;
+}
+
+// 操作栏普通按钮样式
+.common-btn{
+  width: 48px;
+height: 24px;
+line-height: 2px;
+font-size: 12px;
+margin: 0 5px 0 0 !important;
+padding: 0 !important;
+color: #23a4a4;
+background-color: #edf7fb;
+border: 1px solid #c5e1da;
+}
+.common-btn:focus,
+.common-btn:hover {
+  background-color: #edf7fb;
+  border-color: #23a4a4;
+}
+
+// 单选删除按钮
+.delete-btn {
+  width: 48px;
+  height: 24px;
+  padding: 0;
+  margin: 0 5px 0 0 !important;
+  line-height: 2px;
+  font-size: 12px;
+  color: #d42f2f !important;
+  background-color: #fef3f3;
+  border: 1px solid #efc3c3;
+}
+.delete-btn:focus,
+.delete-btn:hover {
+  background-color: #fef3f3;
+  border-color: #d42f2f;
+}
+
+//滚动条样式
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 9px;
+  background-color: transparent;
+} /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+*::-webkit-scrollbar-track {
+  background-color: #f0f6ff;
+} /*定义滚动条轨道 内阴影+圆角*/
+*::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+  border-radius: 6px;
+} /*定义滑块 内阴影+圆角*/
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #c2c2c2;
+  border-radius: 6px;
+} /*定义滑块 内阴影+圆角*/
+.scrollbarHide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbarShow::-webkit-scrollbar {
+  display: block;
+}
+// 分页样式
+.page-wrap {
+  width: 100%;
+  bottom: 0px;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  line-height: 20px;
+  margin: 0 0 10px;
+  .page-option-wrap {
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    background-color: #fff;
+
+    .split-line {
+      display: inline-block;
+      width: 1px;
+      background-color: #e8e8e8;
+      height: 16px;
+      vertical-align: middle;
+    }
+
+    .page-option-icon {
+      display: inline-block;
+      padding: 0 10px;
+      color: #1396c2;
+      font-weight: 700;
+      font-size: 15px;
+
+      // img {
+      //   display: inline-block;
+      //   vertical-align: middle;
+      // }
+    }
+  }
+}
+/* 图片下载按钮 */
+.download_btn {
+  border-radius: 3px;
+  height: 25px;
+  width: 56px;
+  line-height: 9px;
+}
+// 隐藏此刻按钮
+.el-picker-panel__footer .el-button--text.el-picker-panel__link-btn {
+  display: none;
+}
